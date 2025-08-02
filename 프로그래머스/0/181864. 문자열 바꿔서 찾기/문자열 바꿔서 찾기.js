@@ -1,7 +1,4 @@
-function solution(myString, pat) {
-    let answer = [...myString].map(ch => ch === 'A' ? 'B' : 'A').join("")
+const solution = (myString, pat) => [...myString].map(ch=> ch === 'A' ? 'B' : 'A').join('').includes(pat) ? 1 : 0
     
     
     
-    return answer.includes(pat) ? 1 : 0
-}
